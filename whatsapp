@@ -1,0 +1,42 @@
+abstract class Whatsapp 
+{
+	abstract String createAccount();
+	abstract String sendMessages();
+}
+class Srikanth extends Whatsapp
+{
+	String createAccount()
+	{
+		System.out.println("this is srikanth's account");
+		return "providing dp and name to create an account";
+	}
+	String sendMessages()
+	{
+		return "hi! how are you?";
+	}
+}
+class	Anil extends Whatsapp
+{
+	String createAccount()
+	{
+		System.out.println("this is anil's account");
+		return "providing only name to create an account";
+	}
+	String sendMessages()
+	{
+		return "hello! i am good.";
+	}
+}
+class TeamLeadAkka
+{
+	public static void main(String[] args) 
+	{
+		Srikanth s1=new Srikanth();
+		System.out.println(s1.createAccount());
+		System.out.println(s1.sendMessages());
+		Anil a1=new Anil();
+		System.out.println(a1.createAccount());
+		System.out.println(a1.sendMessages());
+	}
+}
+

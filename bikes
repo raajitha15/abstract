@@ -1,0 +1,39 @@
+abstract class Bikes 
+{
+	abstract public String startBike();
+}
+class HeroHonda extends Bikes
+{
+	public String startBike()
+	{
+		return "kick start";
+	}
+
+}
+class Duke extends Bikes
+{
+	public String startBike()
+	{
+		return "self start";
+	}
+}
+class Rajdoot extends Bikes
+{
+	public String startBike()
+	{
+		return "kick start";
+	}
+}
+class TestBikes
+{
+	public static void main(String[] args) 
+	{
+		HeroHonda h1=new HeroHonda();
+		System.out.println("it can be started using "+h1.startBike());
+		Duke d1=new Duke();
+		System.out.println("it can be started using "+d1.startBike());
+		Rajdoot r1=new Rajdoot();
+		System.out.println("it can be started using "+r1.startBike());
+
+	}
+}
